@@ -1,0 +1,101 @@
+/* // File: src/styles/BookingForm.css */
+.booking-form-container {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.booking-form-container h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.selected-info {
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.book-button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover:not(:disabled) {
+  background: #2ecc71;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.book-button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+  .booking-form-container {
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .book-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
