@@ -1,5 +1,4 @@
 // File: src/pages/Home.js
-import React from 'react';
 import SeminarHall from '../components/SeminarHall';
 
 const Home = () => {

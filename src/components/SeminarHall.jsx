@@ -1,5 +1,5 @@
 // File: src/components/SeminarHall.js
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import SeatMap from './SeatMap';
 import BookingForm from './BookingForm';
 import { initialSeats } from '../utils/SeatData';
